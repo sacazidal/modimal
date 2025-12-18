@@ -29,9 +29,10 @@
                 "input": "public"
               }
             ],
-            "styles": [
-              "src/styles.less"
-            ]
+            "stylePreprocessorOptions": {
+              "includePaths": ["src/styles"]
+            },
+            "styles": ["src/styles.less"]
           },
           "configurations": {
             "production": {
@@ -68,9 +69,6 @@
             }
           },
           "defaultConfiguration": "development"
-        },
-        "test": {
-          "builder": "@angular/build:unit-test"
         }
       }
     }
